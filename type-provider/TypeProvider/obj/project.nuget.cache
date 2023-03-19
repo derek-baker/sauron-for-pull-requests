@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ooN6r+fMfkFnNOUz0kbjgm/M+ZgCLUaM2nzZCTT/5goTWvr1Lysiu8c83qy3sv91BE8qY5irsDJ9rZNrnzSWIg==",
+  "success": true,
+  "projectFilePath": "/home/dbaker/code/pwsh/github-api/type-provider/TypeProvider/TypeProvider.fsproj",
+  "expectedPackageFiles": [
+    "/home/dbaker/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512",
+    "/home/dbaker/.nuget/packages/fsharp.data/5.0.2/fsharp.data.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

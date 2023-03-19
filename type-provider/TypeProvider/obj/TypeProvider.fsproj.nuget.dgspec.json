@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/dbaker/code/pwsh/github-api/type-provider/TypeProvider/TypeProvider.fsproj": {}
+  },
+  "projects": {
+    "/home/dbaker/code/pwsh/github-api/type-provider/TypeProvider/TypeProvider.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dbaker/code/pwsh/github-api/type-provider/TypeProvider/TypeProvider.fsproj",
+        "projectName": "TypeProvider",
+        "projectPath": "/home/dbaker/code/pwsh/github-api/type-provider/TypeProvider/TypeProvider.fsproj",
+        "packagesPath": "/home/dbaker/.nuget/packages/",
+        "outputPath": "/home/dbaker/code/pwsh/github-api/type-provider/TypeProvider/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dbaker/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[6.0.1, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Data": {
+              "target": "Package",
+              "version": "[5.0.2, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
