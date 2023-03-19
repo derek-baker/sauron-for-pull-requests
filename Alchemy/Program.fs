@@ -4,7 +4,7 @@ open System.Text.Json
 
 // Project data on open PRs.
 [<Literal>]
-let openPrResponseFileRelativePath = "../../api-gateway/OutputData/OpenPullRequests.json"
+let openPrResponseFileRelativePath = "../../api-gateway/Visions/OpenPullRequests.json"
 type GithubOpenPrEndpointResponseType = JsonProvider<openPrResponseFileRelativePath>
 let openPullRequestsRaw = GithubOpenPrEndpointResponseType.Parse(File.ReadAllText(openPrResponseFileRelativePath))
 let now = System.DateTime.UtcNow
@@ -32,7 +32,7 @@ async {
 
 // Project data on last 100 closed PRs.
 [<Literal>]
-let closedPrResponseFileRelativePath = "../../api-gateway/OutputData/ClosedPullRequests.json"
+let closedPrResponseFileRelativePath = "../../api-gateway/Visions/ClosedPullRequests.json"
 type GithubClosedPrEndpointResponseType = JsonProvider<closedPrResponseFileRelativePath>
 let closedPullRequestsRaw = GithubClosedPrEndpointResponseType.Parse(File.ReadAllText(closedPrResponseFileRelativePath))
 
@@ -59,7 +59,8 @@ async {
     let outputFilepath = closedPrResponseFileRelativePath.Replace(".json", "_cleaned.json")
     let outputData = {| 
         AverageTimeToMergeInHours = averageTimeToMergeInHours 
-        MergedPullRequests = mergedPullRequests |}
+        MergedPullRequests = mergedPullRequests 
+    |}
 
     File.WriteAllTextAsync(outputFilepath, JsonSerializer.Serialize(outputData))
         |> Async.AwaitTask

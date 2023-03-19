@@ -8,10 +8,10 @@ param(
     [string[]] $repoNames = @('vscode', 'TypeScript'),
 
     [Parameter(Mandatory=$false)]
-    [string] $openPullRequestsOutputFile = "$PSScriptRoot\OutputData\OpenPullRequests.json",
+    [string] $openPullRequestsOutputFile = "$PSScriptRoot\Visions\OpenPullRequests.json",
 
     [Parameter(Mandatory=$false)]
-    [string] $closedPullRequestsOutputFile = "$PSScriptRoot\OutputData\ClosedPullRequests.json"
+    [string] $closedPullRequestsOutputFile = "$PSScriptRoot\Visions\ClosedPullRequests.json"
 
     # TODO: May be required for private repos
     #[Parameter(Mandatory=$false)]
